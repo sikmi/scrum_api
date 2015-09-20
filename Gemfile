@@ -2,7 +2,17 @@ source 'https://rubygems.org'
 
 
 gem 'rails', '4.2.4'
-gem 'mysql2'
+
+# = db
+gem 'mysql2', '~> 0.3.18'
+
+# = model
+
+
+# = controller
+gem 'responders', '~> 2.0'
+
+# = view
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
@@ -32,6 +42,6 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-  gem 'apipie-rails'
+  gem 'apipie-rails', github: 'Apipie/apipie-rails'
 end
 
