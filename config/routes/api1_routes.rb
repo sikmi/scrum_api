@@ -15,11 +15,11 @@ module Api1Routes
       # プロジェクト参加
       resources :project_users, only: [:index, :show, :create, :update, :destroy]
       # プロダクトバックログ
-      resources :tickets, only: [:index, :show, :create, :update, :destroy] do
+      resources :cards, only: [:index, :show, :create, :update, :destroy] do
         resources :comments, only: [:index, :create, :update, :destroy]
       end
       # スプリントバックログ
-      resources :tasks, only: [:index, :show, :create, :update, :destroy] do
+      resources :tickets, only: [:index, :show, :create, :update, :destroy] do
         resources :comments, only: [:index, :create, :update, :destroy]
       end
       # バグバックログ

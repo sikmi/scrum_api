@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  project_id: 
+  sprint_id: 
+  user_id: 
+  name: MyString
+  comment: MyText
+  state: MyString
+
+two:
+  project_id: 
+  sprint_id: 
+  user_id: 
+  name: MyString
+  comment: MyText
+  state: MyString
