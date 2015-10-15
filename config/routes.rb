@@ -4,6 +4,8 @@ load Rails.root.join "config/routes/public_routes.rb"
 
 Rails.application.routes.draw do
   extend Api1Routes
+  extend AdminRoutes
+  extend PublicRoutes
   apipie
 
   namespace :admin do
