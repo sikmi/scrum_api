@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   extend PublicRoutes
   apipie
 
+  root to: 'welcome#landing'
+
   namespace :admin do
     admin_routes
   end
