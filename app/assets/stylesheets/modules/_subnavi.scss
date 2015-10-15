@@ -1,0 +1,42 @@
+#subnavi{
+  margin-top: 45px;
+  margin-bottom: 0;
+  padding: 10px 30px 0 30px;
+  height: 90px;
+  border-bottom: solid 1px #D4D4D4;
+  .subnavi{
+    a { color: #080808; }
+    .title-area { 
+      img { height: 70px;  }
+    }
+    .title { font-size: 26px; }
+    dl dd img { height: 70px; }
+    .project_users {
+      li a { 
+        padding: 0; line-height: 40px;
+        img { width: 32px; border-radius: 15px; border: solid 2px #fff;  }
+        &:hover {
+          background-color: #fff;
+          img { border: solid 2px #fd6e7d; }
+        }
+      }
+    }
+  }
+  .subsubnavi{
+    a { color: #080808; }
+    margin-top: 5px;
+    margin-left: 80px;
+    height: 29px;
+    li { background-color: #fff; margin: 0 7px;}
+    a {
+      font-size: 12px;
+      height: 29px; line-height: 29px; padding: 0 4px;
+      text-align: center;
+      //border-bottom: solid 1px #D4D4D4;
+      &.active, &:hover{
+        background-color: #fff;
+        border-bottom: solid 2px #FD6E7D;
+      }
+    }
+  }
+}

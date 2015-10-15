@@ -1,0 +1,154 @@
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(10deg); } 
+}
+
+.product_backlog{
+  border-collapse: collapse;
+  background-color: transparent;
+  border: none;
+  .product_backlog_cell_none{
+    background-color: transparent;
+    border: none;
+  }
+  th {
+    background-color: #fff;
+    border: solid 1px #C8C8C8;
+    &.product_backlog_header{
+      text-align: center;
+      background-color: 
+    }
+    &.product_backlog_name{
+      text-align: left;
+      min-width: 200px;
+      height: 180px;
+    }
+  }
+  td {
+    background-color: #fff;
+    min-width: 150px;
+    min-height: 180px;
+    vertical-align: top;
+    position: relative;
+    padding: 0;
+    border: dashed 1px #C8C8C8;
+  }
+  /*
+    .product_backlog_card_placeholder {
+      height: 50px;
+      background-color: #000;
+      box-shadow: 0 0 4px;
+      color: #000;
+      width: 140px;
+      margin: 10px 5px;
+      border-radius: 10px;
+    }
+    */
+  .product_backlog_card{
+    margin: 10px 5px;
+    position: relative;
+    display: block;
+    background-color: #fff;
+    //height: 160px;
+    width: 140px;
+    border: solid 1px #FD6E7D;
+    border-bottom-width: 5px;
+    //border-right-width: 5px;
+    border-radius: 2px;
+    box-shadow: 0px 2px 4px;
+    font-size: 10px;
+    //position: absolute;
+    &:hover {
+      box-shadow: 0px 4px 10px;
+      //position: absolute;
+      z-index: 31;
+      cursor: move;
+    }
+    &.ui-sortable-helper {
+      animation: rotate 0.2s;
+      transform: rotate(10deg);
+      box-shadow: 0px 4px 10px;
+      z-index: 31;
+      cursor: move;
+    }
+    .product_backlog_card_title {
+      font-weight: bold;
+      padding: 2px 5px;
+    }
+    .product_backlog_card_description {
+      padding: 0 5px 5px 5px;
+      font-size: 9px;
+      line-height: 13px;
+      color: #444;
+    }
+    .product_backlog_card_badge {
+      border-radius: 20px;
+      height: 20px;
+      min-width: 20px;
+      line-height: 20px;
+      margin-top: -10px;
+      margin-right: -10px;
+      text-align: center;
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 0 2px;
+      color: #fff;
+      background-color: #FD6E7D;
+      z-index: 1;
+    }
+    &.is_yellow { border-color: #FFDB68; .product_backlog_card_badge{ background-color: #FFDB68;}  }
+    &.is_blue { border-color: #58C9F0;  .product_backlog_card_badge{ background-color: #58C9F0;}  }
+    &.is_green { border-color: #A6DB33;  .product_backlog_card_badge{ background-color: #A6DB33;} }
+  }
+}
+.product_backlog_modal {
+  width: 760px;
+  left: -1 * 760px / 2;
+  min-height: 300px;
+  position: fixed;
+  z-index: 110;
+  background-color: #fff;
+  top: 50px;
+  margin-left: 50%;
+  display: block;
+  background-color: #fff;
+  //height: 160px;
+  border: solid 3px #FD6E7D;
+  border-bottom-width: 15px;
+  //border-right-width: 5px;
+  border-radius: 6px;
+  box-shadow: 0px 10px 20px;
+  font-size: 10px;
+  .product_backlog_modal_left {
+    width: 414px;
+  }
+  .product_backlog_modal_right {
+    width: 340px;
+    background-color: #FD6E7D;
+  }
+  .product_backlog_card_badge {
+    border-radius: 40px;
+    height: 40px;
+    min-width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    margin-top: -20px;
+    margin-right: 340px - 20px;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 2px;
+    color: #fff;
+    background-color: #FD6E7D;
+    z-index: 1;
+  }
+  .product_backlog_modal_comment {
+    height: 500px;
+    margin: 0 0 0 3px;
+    background-color: #fff;
+  }
+}

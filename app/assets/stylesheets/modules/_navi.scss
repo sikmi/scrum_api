@@ -1,0 +1,12 @@
+#navi{
+  .gs-topbar{
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #fff;
+    border-bottom: solid 1px #ebebeb;
+    .top-bar{ 
+      .title-area .name h1 a img{ height: 11px; }
+      .top-bar-section ul li a img.user_profile{ height: 34px; border-radius: 4px; margin-right: 10px; }
+    }
+  }
+}
