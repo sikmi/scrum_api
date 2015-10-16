@@ -10,6 +10,7 @@ gem 'mysql2', '~> 0.3.18'
 gem 'devise'
 gem 'omniauth'
 gem 'omniauth-github'
+gem "github_api"
 gem 'ransack'
 gem 'kaminari'
 
