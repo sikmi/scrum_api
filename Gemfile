@@ -7,7 +7,9 @@ gem 'rails', '4.2.4'
 gem 'mysql2', '~> 0.3.18'
 
 # = model
-
+gem 'devise'
+gem 'omniauth'
+gem 'omniauth-github'
 
 # = controller
 gem 'responders', '~> 2.0'
