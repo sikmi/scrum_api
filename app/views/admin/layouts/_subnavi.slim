@@ -1,0 +1,41 @@
+.top-bar.subnavi
+  ul.title-area
+    li.name
+      a
+        = image_tag "examples/project_logo@2x.png", alt: "スクラム", class: "project_logo"
+  section.top-bar-section
+    ul.left
+      li.name
+        a.title イカナカマ
+    ul.right.project_users
+      li
+        a(href="#") 
+          = image_tag "examples/user.jpg", alt: "車 拓哉", class: "user_profile"
+      li
+        a(href="#") 
+          = image_tag "examples/user2.jpg", alt: "車 拓哉", class: "user_profile"
+      li
+        a(href="#") 
+          = image_tag "examples/user3.jpg", alt: "車 拓哉", class: "user_profile"
+      li
+        a(href="#") 
+          = image_tag "examples/user4.jpg", alt: "車 拓哉", class: "user_profile"
+.top-bar.subsubnavi
+  section.top-bar-section
+    ul.left
+      li
+        a(href="#") ホーム
+      li
+        a.active(href="#") プロダクトバックログ
+      li
+        a(href="#") スプリントバックログ#13
+      li
+        a(href="#") バグ
+      li
+        a(href="#") 議事録
+      li
+        a(href="#") ドキュメント
+
+    ul.right
+      li
+        a(href="#") プロジェクト設定

@@ -38,4 +38,10 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+  
+  # scss の設定
+  config.sass.preferred_syntax = :scss
+  config.sass.line_comments = false
+  config.sass.cache = false
+
 end

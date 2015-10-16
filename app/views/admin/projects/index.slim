@@ -1,0 +1,9 @@
+#subnavi
+
+h3 モックデータ
+- @projects.each do |project| 
+  = link_to project.name, pb_admin_project_path(project)
+
+h3 github public 情報
+- (Github.repos.list user: 'Hozum').each do |project|
+  = project.archive_url

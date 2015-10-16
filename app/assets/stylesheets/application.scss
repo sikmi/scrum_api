@@ -1,5 +1,13 @@
+// library
+// @import 'bootstrap-sprockets'
+// @import 'bootstrap'
+// @import 'font-awesome-sprockets'
+// @import 'font-awesome'
 @import "settings";
 @import "foundation";
+
+// original
+//@import "**/*"
 @import "modules/utils";
 @import "modules/navi";
 @import "modules/subnavi";
