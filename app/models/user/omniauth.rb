@@ -10,6 +10,9 @@ module User::Omniauth
       user = User.find_or_initialize_by(hash)
       user.update( {
         name: auth.info.name,
+        nickname: auth.info.nickname,
+        email: auth.info.email,
+        image: auth.info.image
       })
       user
     end
