@@ -1,0 +1,16 @@
+html
+  head
+    title ScrumApi
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true 
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true 
+    = javascript_include_tag "vendor/modernizr", 'data-turbolinks-track' => true 
+    meta content="width=device-width, initial-scale=1.0" name="viewport" 
+    = csrf_meta_tags 
+  body
+    #wrap
+      #header = render "/layouts/header"
+      //#notify = render "/layouts/notify"
+      #main   = yield
+      //#footer = render "/layouts/footer"
+      //= render 'layouts/analytics'
+
