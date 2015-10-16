@@ -7,10 +7,6 @@ html
     meta content="width=device-width, initial-scale=1.0" name="viewport" 
     = csrf_meta_tags 
   body
-    #wrap
-      #header = render "/layouts/header"
-      //#notify = render "/layouts/notify"
-      #main   = yield
-      //#footer = render "/layouts/footer"
-      //= render 'layouts/analytics'
-
+    #navi = render "/layouts/header"
+    #subnavi
+    #main = yield
