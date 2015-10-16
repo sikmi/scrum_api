@@ -18,12 +18,12 @@ class OmniauthCallbacksController < ApplicationController
         # ログインに成功
         flash[:notice_success] = "ログインに成功しました"
         sign_in user
-        redirect_to root_path
+        redirect_to admin_projects_path
       else
         # 登録に成功
         flash[:notice_success] = "登録に成功しました"
         sign_in user
-        redirect_to root_path
+        redirect_to admin_projects_path
       end
     else
       # ログインに失敗し、サインイン画面に遷移

@@ -10,6 +10,8 @@ gem 'mysql2', '~> 0.3.18'
 gem 'devise'
 gem 'omniauth'
 gem 'omniauth-github'
+gem 'ransack'
+gem 'kaminari'
 
 # = controller
 gem 'responders', '~> 2.0'
